@@ -1,5 +1,5 @@
 ### Création de la classe Joueur
-
+# import de gobelet pour récuperer les méthodes
 from Gobelet import Gobelet
 
 
@@ -25,13 +25,14 @@ class Joueur():
     def score(self, score):
         self._score = score
     
-    
+    # méthode qui permet de jouer (en lancant un gobelet avec un certain nombre de dés ici 3)
     def jouer(self):
         gobelet= Gobelet(3)
         gobelet.lancer()
         self.score = self.score + gobelet.GetValeur()
         self.AfficherScore()
-        
+    
+    #Affiche le score du joueur avec son nom    
     def AfficherScore(self):
         print(f"Le score de {self.nom} est de {self.score}")
         

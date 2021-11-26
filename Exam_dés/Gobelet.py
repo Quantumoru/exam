@@ -1,5 +1,5 @@
 ### Création de la classe Gobelet (représentant un gobelet avec des dés dedans)
-
+# import Dé pour récupérer les méthodes
 from Dé import De
 
 
@@ -45,7 +45,7 @@ class Gobelet:
         self.AfficherScore()
         return self.GetValeur()
         
-    
+    #Affichage du score total du lancer
     def AfficherScore(self):
         print(f"Le score de ce lancer est de {self.val_gob}")
     
