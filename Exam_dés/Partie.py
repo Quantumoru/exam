@@ -1,5 +1,6 @@
 ### Création de la classe Partie
 
+from Gobelet import Gobelet
 from Joueur import Joueur
 #from Gobelet import Gobelet
 
@@ -55,8 +56,9 @@ class Partie:
         while i < self.nb_tour:
             #Boucle pour faire jouer les différents joueurs
             for obj in self.obj_joueurs :
+                gobelet = Gobelet(self.nb_des)
                 a = obj.score
-                obj.jouer()
+                obj.jouer(gobelet)
                 a = a + obj.score
             i = i + 1
         else:
@@ -74,6 +76,5 @@ class Partie:
         else:
             print(f"Le gagnant est : {result[0][1]} avec {result[0][0]} points. \nBravo!")
             
-#pour le moment on ne peut pas changer le nombre de dés
-partie = Partie(5,3,3)
-partie.lancer()
+
+

@@ -9,10 +9,10 @@ class Gobelet:
         self._val_gob = 0
         # créé une lsite et ajoute du nombre de dés à ma liste
         self.des = []
-        self.ajoutliste()
+        self.ajoutDe()
         
     # Ajoute un nombre de dés à ma liste
-    def ajoutliste(self):
+    def ajoutDe(self):
         for i in range(self.nb_des):
             (self.des).append(i)
         
