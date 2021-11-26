@@ -4,10 +4,10 @@ from Dé import De
 
 
 class Gobelet:
-    def __init__(self, nb_des : list):
+    def __init__(self, nb_des):
         self.nb_des = nb_des
         self._val_gob = 0
-        # créé une lsite et zjoute du nombre de dés à ma liste
+        # créé une lsite et ajoute du nombre de dés à ma liste
         self.des = []
         self.ajoutliste()
         

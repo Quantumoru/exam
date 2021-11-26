@@ -1,7 +1,7 @@
 ### Création de la classe Partie
 
 from Joueur import Joueur
-from Gobelet import Gobelet
+#from Gobelet import Gobelet
 
 class Partie:
     def __init__(self, nb_j, nb_tour, nb_des):
@@ -68,6 +68,6 @@ class Partie:
         else:
             print(f"Le gagnant est : {result[0][1]} avec {result[0][0]} points. \nBravo!")
             
-        
-partie = Partie(2,3,3)
+#pour le moment on ne peut pas changer le nombre de dés
+partie = Partie(5,3,3)
 partie.lancer()
